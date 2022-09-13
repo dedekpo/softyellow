@@ -3,6 +3,7 @@ import "@fontsource/open-sans/700.css";
 
 import type { AppProps } from "next/app";
 import { ChakraProvider, extendTheme } from "@chakra-ui/react";
+import { GoogleAnalytics } from "nextjs-google-analytics";
 
 const colors = {
 	brand: {
@@ -34,9 +35,12 @@ const theme = extendTheme(colors);
 
 function MyApp({ Component, pageProps }: AppProps) {
 	return (
-		<ChakraProvider theme={theme}>
-			<Component {...pageProps} />
-		</ChakraProvider>
+		<>
+			<GoogleAnalytics trackPageViews />
+			<ChakraProvider theme={theme}>
+				<Component {...pageProps} />
+			</ChakraProvider>
+		</>
 	);
 }
 
