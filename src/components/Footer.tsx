@@ -117,7 +117,7 @@ export default function Footer() {
 							© 2022 Soft Yellow. Todos os direitos reservados
 						</Text>
 					</Stack>
-					<Stack align={"flex-start"} mt={{ base: 5, md: 0 }}>
+					{/* <Stack align={"flex-start"} mt={{ base: 5, md: 0 }}>
 						<ListHeader>Entramos em contato</ListHeader>
 						<Stack direction={"row"}>
 							<Input
@@ -147,7 +147,7 @@ export default function Footer() {
 								icon={<BiMailSend />}
 							/>
 						</Stack>
-					</Stack>
+					</Stack> */}
 				</Flex>
 			</Container>
 		</Box>

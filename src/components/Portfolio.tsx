@@ -80,10 +80,14 @@ export default function Portfolio() {
 					scrolling="no"
 				/>
 			</Box>
-			<Text mt={{ base: "60px", md: 7 }} mb={2}>
+			<Text mt={{ base: "60px", md: 10 }} mb={2}>
 				Tecnologias utilizadas:
 			</Text>
-			<Flex w={{ base: "100vw", md: "4xl" }} justify="space-evenly">
+			<Flex
+				w={{ base: "100vw", md: "4xl" }}
+				justify="space-evenly"
+				mb={10}
+			>
 				<Img
 					h="50px"
 					src="/react.png"

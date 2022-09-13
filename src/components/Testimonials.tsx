@@ -10,18 +10,17 @@ import {
 
 const testimonials = [
 	{
-		name: "Brandon P.",
-		role: "Chief Marketing Officer",
-		content:
-			"It really saves me time and effort. It is exactly what our business has been lacking. EEZY is the most valuable business resource we have EVER purchased. After using EEZY my business skyrocketed!",
-		avatar: "https://images.unsplash.com/photo-1603415526960-f7e0328c63b1?ixid=MXwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHw%3D&ixlib=rb-1.2.1&auto=format&fit=crop&w=334&q=80",
+		name: "Meireles.",
+		role: "CEO - Be Happy",
+		content: "Parabéns! O site ficou EXCELENTE! Muito bom mesmo!",
+		avatar: "/logo_behappy.png",
 	},
 	{
-		name: "Krysta B.",
-		role: "Entrepreneur",
+		name: "Carolina Rosa",
+		role: "CEO da Game of Stones",
 		content:
 			"I didn't even need training. We've used EEZY for the last five years. I have gotten at least 50 times the value from EEZY. I made back the purchase price in just 48 hours!",
-		avatar: "https://images.unsplash.com/photo-1598550874175-4d0ef436c909?ixid=MXwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHw%3D&ixlib=rb-1.2.1&auto=format&fit=crop&w=334&q=80",
+		avatar: "Carol.jpeg",
 	},
 ];
 
@@ -104,7 +103,7 @@ export default function Testimonials() {
 			justifyContent={"center"}
 			direction={"column"}
 			width={"full"}
-			mt="100px"
+			my="100px"
 			pt={10}
 			borderTop="1px"
 			borderColor="gray.200"
@@ -113,8 +112,7 @@ export default function Testimonials() {
 		>
 			<Box width={{ base: "full", sm: "xl", lg: "2xl" }} margin={"auto"}>
 				<chakra.h3
-					fontFamily={"heading"}
-					fontWeight={"bold"}
+					fontWeight={"light"}
 					fontSize={20}
 					textTransform={"uppercase"}
 					color={"yellow.400"}

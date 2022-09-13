@@ -27,16 +27,15 @@ export default function HowWeWork() {
 			</Text>
 			<Text textAlign="center" color="gray.700" fontSize="xl" mb="60px">
 				Nossa missão é fazer com que você alcance o seu objetivo de
-				construir seu produto digital com a menor dor de cabeça
-				possível. Somos obcecados por tecnologia, design, qualidade e
-				excelência.
+				construir seu produto digital sem dor de cabeça. Somos obcecados
+				por tecnologia, design e excelência.
 			</Text>
 			<Step
 				pos={"Passo 1"}
 				tag={"PRÉ-PROJETO"}
 				title={"Objetivo"}
 				phrase={
-					"Esta fase se concentra em recuperar informações das partes interessadas e, finalmente, concordar com a meta e a visão, ao mesmo tempo em que identifica possíveis desafios e restrições do projeto."
+					"Esta fase se concentra em recuperar informações das partes interessadas e definir a meta e escopo, ao mesmo tempo em que se identifica possíveis desafios e restrições do projeto."
 				}
 				subtag={
 					"Apresentações • Estabelecendo a equipe • Confirmando o objetivo"
@@ -47,7 +46,7 @@ export default function HowWeWork() {
 				tag={"CONTRATO ASSINADO"}
 				title={"Prototipação e design"}
 				phrase={
-					"Seja um site, aplicativo ou uma plataforma B2B, é essencial ter uma experiência de usuário e interfaces eficientes e que funcionem bem."
+					"Seja um site, aplicativo ou uma plataforma B2B, é essencial ter uma boa experiência de usuário, interfaces eficientes e que funcionem bem."
 				}
 				subtag={"Diagramas UX • Telas mockups"}
 			/>
@@ -67,7 +66,7 @@ export default function HowWeWork() {
 				tag={"DEVOPS"}
 				title={"Infraestrutura"}
 				phrase={
-					"Os projetos são implantados na nuvem ou no local seguindo as práticas recomendadas de DevOps. Sua infraestrutura será segura, sólida, rápida e escalável."
+					"Os projetos são implantados na nuvem seguindo as práticas recomendadas de DevOps. Sua infraestrutura será segura, rápida e escalável."
 				}
 				subtag={
 					"Projeto de infraestrutura • Modelagem de dados • Monitoramento"
