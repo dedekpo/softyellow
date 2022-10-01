@@ -7,7 +7,7 @@ export default function Features() {
 			_dark={{
 				bg: "#3e3e3e",
 			}}
-			p={20}
+			p={{ base: 5, md: 20 }}
 			w="auto"
 			justifyContent="center"
 			alignItems="center"
@@ -25,7 +25,7 @@ export default function Features() {
 					maxW="7xl"
 					mx="auto"
 					px={{
-						base: 4,
+						base: 0,
 						lg: 8,
 					}}
 				>
@@ -54,10 +54,10 @@ export default function Features() {
 								sm: "4xl",
 							}}
 							lineHeight="8"
-							fontWeight="extrabold"
+							fontWeight="bold"
 							letterSpacing="tight"
 							_light={{
-								color: "gray.900",
+								color: "gray.700",
 							}}
 						>
 							Tudo que você precisa para tirar a ideia do papel
