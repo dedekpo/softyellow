@@ -1,0 +1,48 @@
+<svg width="32px" height="32px" viewBox="0 0 32 32" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+  <defs>
+    <clipPath id="clip-computer">
+      <rect width="32" height="32"/>
+    </clipPath>
+  </defs>
+  <g id="computer" clip-path="url(#clip-computer)">
+    <g id="Group_3463" data-name="Group 3463">
+      <g id="Group_3456" data-name="Group 3456">
+        <g id="Group_3449" data-name="Group 3449">
+          <g id="Group_3448" data-name="Group 3448">
+            <g id="Group_3447" data-name="Group 3447">
+              <path id="Path_4068" data-name="Path 4068" d="M22.083,28.164H9.917a1,1,0,1,1,0-2H22.083a1,1,0,0,1,0,2Z" fill="#344952"/>
+            </g>
+          </g>
+        </g>
+        <g id="Group_3452" data-name="Group 3452">
+          <g id="Group_3451" data-name="Group 3451">
+            <g id="Group_3450" data-name="Group 3450">
+              <path id="Path_4069" data-name="Path 4069" d="M30.417,24.17H1.583a1,1,0,0,1-1-1V4.836a1,1,0,0,1,1-1H30.417a1,1,0,0,1,1,1V23.17A1,1,0,0,1,30.417,24.17Zm-27.834-2H29.417V5.836H2.583Z" fill="#344952"/>
+            </g>
+          </g>
+        </g>
+        <g id="Group_3455" data-name="Group 3455">
+          <g id="Group_3454" data-name="Group 3454">
+            <g id="Group_3453" data-name="Group 3453">
+              <path id="Path_4070" data-name="Path 4070" d="M19.917,27.664H12.083a.5.5,0,0,1-.5-.5V23.17a.5.5,0,0,1,.5-.5h7.834a.5.5,0,0,1,.5.5v3.994A.5.5,0,0,1,19.917,27.664Zm-7.334-1h6.834V23.67H12.583Z" fill="#344952"/>
+            </g>
+          </g>
+        </g>
+      </g>
+      <g id="Group_3459" data-name="Group 3459">
+        <g id="Group_3458" data-name="Group 3458">
+          <g id="Group_3457" data-name="Group 3457">
+            <path id="Path_4071" data-name="Path 4071" d="M30.146,18.813H1.854a.5.5,0,1,1,0-1H30.146a.5.5,0,0,1,0,1Z" fill="#344952"/>
+          </g>
+        </g>
+      </g>
+      <g id="Group_3462" data-name="Group 3462">
+        <g id="Group_3461" data-name="Group 3461">
+          <g id="Group_3460" data-name="Group 3460">
+            <circle id="Ellipse_35" data-name="Ellipse 35" cx="0.875" cy="0.875" r="0.875" transform="translate(15.125 19.625)" fill="#344952"/>
+          </g>
+        </g>
+      </g>
+    </g>
+  </g>
+</svg>

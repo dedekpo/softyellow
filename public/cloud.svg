@@ -1,0 +1,40 @@
+<svg width="32px" height="32px" viewBox="0 0 32 32" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+  <defs>
+    <clipPath id="clip-cloud2">
+      <rect width="32" height="32"/>
+    </clipPath>
+  </defs>
+  <g id="cloud2" clip-path="url(#clip-cloud2)">
+    <g id="Group_2323" data-name="Group 2323" transform="translate(-52 -312)">
+      <g id="Group_2318" data-name="Group 2318">
+        <g id="Group_2313" data-name="Group 2313">
+          <g id="Group_2312" data-name="Group 2312">
+            <g id="Group_2311" data-name="Group 2311">
+              <g id="Group_2310" data-name="Group 2310">
+                <path id="Path_3832" data-name="Path 3832" d="M76.5,338.6a1,1,0,0,1,0-2,5.377,5.377,0,1,0,0-10.754,1,1,0,0,1-1-1,7.5,7.5,0,0,0-15,0,1,1,0,0,1-1,1,5.377,5.377,0,1,0,0,10.754,1,1,0,0,1,0,2,7.377,7.377,0,0,1-.954-14.692,9.5,9.5,0,0,1,18.9,0A7.377,7.377,0,0,1,76.5,338.6Z" fill="#344952"/>
+              </g>
+            </g>
+          </g>
+        </g>
+        <g id="Group_2317" data-name="Group 2317">
+          <g id="Group_2316" data-name="Group 2316">
+            <g id="Group_2315" data-name="Group 2315">
+              <g id="Group_2314" data-name="Group 2314">
+                <path id="Path_3833" data-name="Path 3833" d="M62.015,325.349a.5.5,0,0,1-.5-.5A6.492,6.492,0,0,1,68,318.364a.5.5,0,0,1,0,1,5.492,5.492,0,0,0-5.485,5.485A.5.5,0,0,1,62.015,325.349Z" fill="#344952"/>
+              </g>
+            </g>
+          </g>
+        </g>
+      </g>
+      <g id="Group_2322" data-name="Group 2322">
+        <g id="Group_2321" data-name="Group 2321">
+          <g id="Group_2320" data-name="Group 2320">
+            <g id="Group_2319" data-name="Group 2319">
+              <path id="Path_3834" data-name="Path 3834" d="M70.5,340.649h-5a1,1,0,0,1-1-1v-4.017H61.563a1,1,0,0,1-.686-1.728l6.438-6.05a1,1,0,0,1,1.37,0l6.438,6.05a1,1,0,0,1-.685,1.728H71.5v4.017A1,1,0,0,1,70.5,340.649Zm-4-2h3v-4.017a1,1,0,0,1,1-1h1.413L68,329.955l-3.913,3.677H65.5a1,1,0,0,1,1,1Z" fill="#344952"/>
+            </g>
+          </g>
+        </g>
+      </g>
+    </g>
+  </g>
+</svg>

@@ -33,7 +33,7 @@ export default function Hero() {
 				palavraIndex === listaPalavras.length - 1 ? 0 : palavraIndex + 1
 			);
 			setChange(!change);
-		}, 3500);
+		}, 3000);
 		return () => clearTimeout(timer);
 	}, [palavraIndex, change]);
 
