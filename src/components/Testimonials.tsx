@@ -19,7 +19,7 @@ const testimonials = [
 		name: "Carolina Rosa",
 		role: "CEO da Game of Stones",
 		content:
-			"Posso definir a Soft Yellow como extremamente profissional. Precisei de uma plataforma de vendas on-line e recebi simplesmente o melhor ecommerce, além, de uma excelente acessoria. Indico de olhos fechados!",
+			"Posso definir a Soft Yellow como extremamente profissional. Precisei de uma plataforma de vendas on-line e recebi simplesmente o melhor e-commerce, além, de uma excelente acessoria. Indico de olhos fechados!",
 		avatar: "Carol.jpeg",
 	},
 ];

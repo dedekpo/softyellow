@@ -10,6 +10,7 @@ import {
 	Text,
 	useBreakpointValue,
 } from "@chakra-ui/react";
+import { motion } from "framer-motion";
 import { useEffect, useState } from "react";
 
 import Lottie from "react-lottie";
@@ -41,6 +42,14 @@ export default function Hero() {
 		<Stack minH={"90vh"} direction={{ base: "column", md: "row" }}>
 			<Background />
 			<Flex
+				as={motion.div}
+				initial={{
+					opacity: 0,
+				}}
+				animate={{
+					opacity: 1,
+				}}
+				transition="1s"
 				p={{ base: 4, md: 8 }}
 				flex={1}
 				align={"center"}
@@ -113,6 +122,26 @@ export default function Hero() {
 }
 
 function Background() {
+	const draw = {
+		hidden: { pathLength: 0, opacity: 0 },
+		visible: (i: number) => {
+			const delay = 1 + i * 0.3;
+			return {
+				pathLength: 1,
+				opacity: 1,
+				transition: {
+					pathLength: {
+						delay,
+						type: "spring",
+						duration: 1.5,
+						bounce: 0,
+					},
+					opacity: { delay, duration: 0.01 },
+				},
+			};
+		},
+	};
+
 	return (
 		<chakra.svg
 			xmlns="http://www.w3.org/2000/svg"
@@ -122,31 +151,150 @@ function Background() {
 			w="99vw"
 			h="99vh"
 			opacity="50%"
+			as={motion.svg}
+			initial="hidden"
+			animate="visible"
 		>
-			<rect fill="#FFFFFF" width="800" height="800" />
-			<g fill="none" stroke="#FFEE33" strokeWidth="1">
-				<path d="M769 229L1037 260.9M927 880L731 737 520 660 309 538 40 599 295 764 126.5 879.5 40 599-197 493 102 382-31 229 126.5 79.5-69-63" />
-				<path d="M-31 229L237 261 390 382 603 493 308.5 537.5 101.5 381.5M370 905L295 764" />
-				<path d="M520 660L578 842 731 737 840 599 603 493 520 660 295 764 309 538 390 382 539 269 769 229 577.5 41.5 370 105 295 -36 126.5 79.5 237 261 102 382 40 599 -69 737 127 880" />
-				<path d="M520-140L578.5 42.5 731-63M603 493L539 269 237 261 370 105M902 382L539 269M390 382L102 382" />
-				<path d="M-222 42L126.5 79.5 370 105 539 269 577.5 41.5 927 80 769 229 902 382 603 493 731 737M295-36L577.5 41.5M578 842L295 764M40-201L127 80M102 382L-261 269" />
-			</g>
-			<g fill="#000000">
-				<circle cx="769" cy="229" r="5" />
-				<circle cx="539" cy="269" r="5" />
-				<circle cx="603" cy="493" r="5" />
-				<circle cx="731" cy="737" r="5" />
-				<circle cx="520" cy="660" r="5" />
-				<circle cx="309" cy="538" r="5" />
-				<circle cx="295" cy="764" r="5" />
-				<circle cx="40" cy="599" r="5" />
-				<circle cx="102" cy="382" r="5" />
-				<circle cx="127" cy="80" r="5" />
-				<circle cx="370" cy="105" r="5" />
-				<circle cx="578" cy="42" r="5" />
-				<circle cx="237" cy="261" r="5" />
-				<circle cx="390" cy="382" r="5" />
-			</g>
+			<motion.rect
+				variants={draw}
+				custom={0}
+				fill="#FFFFFF"
+				width="800"
+				height="800"
+			/>
+			<motion.g
+				variants={draw}
+				custom={1}
+				fill="none"
+				stroke="#FFEE33"
+				strokeWidth="1"
+			>
+				<motion.path
+					variants={draw}
+					custom={1}
+					d="M769 229L1037 260.9M927 880L731 737 520 660 309 538 40 599 295 764 126.5 879.5 40 599-197 493 102 382-31 229 126.5 79.5-69-63"
+				/>
+				<motion.path
+					variants={draw}
+					custom={2}
+					d="M-31 229L237 261 390 382 603 493 308.5 537.5 101.5 381.5M370 905L295 764"
+				/>
+				<motion.path
+					variants={draw}
+					custom={3}
+					d="M520 660L578 842 731 737 840 599 603 493 520 660 295 764 309 538 390 382 539 269 769 229 577.5 41.5 370 105 295 -36 126.5 79.5 237 261 102 382 40 599 -69 737 127 880"
+				/>
+				<motion.path
+					variants={draw}
+					custom={4}
+					d="M520-140L578.5 42.5 731-63M603 493L539 269 237 261 370 105M902 382L539 269M390 382L102 382"
+				/>
+				<motion.path
+					variants={draw}
+					custom={5}
+					d="M-222 42L126.5 79.5 370 105 539 269 577.5 41.5 927 80 769 229 902 382 603 493 731 737M295-36L577.5 41.5M578 842L295 764M40-201L127 80M102 382L-261 269"
+				/>
+			</motion.g>
+			<motion.g variants={draw} fill="#000000">
+				<motion.circle
+					custom={1}
+					variants={draw}
+					cx="769"
+					cy="229"
+					r="5"
+				/>
+				<motion.circle
+					custom={2}
+					variants={draw}
+					cx="539"
+					cy="269"
+					r="5"
+				/>
+				<motion.circle
+					custom={3}
+					variants={draw}
+					cx="603"
+					cy="493"
+					r="5"
+				/>
+				<motion.circle
+					custom={4}
+					variants={draw}
+					cx="731"
+					cy="737"
+					r="5"
+				/>
+				<motion.circle
+					custom={5}
+					variants={draw}
+					cx="520"
+					cy="660"
+					r="5"
+				/>
+				<motion.circle
+					custom={6}
+					variants={draw}
+					cx="309"
+					cy="538"
+					r="5"
+				/>
+				<motion.circle
+					custom={7}
+					variants={draw}
+					cx="295"
+					cy="764"
+					r="5"
+				/>
+				<motion.circle
+					custom={8}
+					variants={draw}
+					cx="40"
+					cy="599"
+					r="5"
+				/>
+				<motion.circle
+					custom={9}
+					variants={draw}
+					cx="102"
+					cy="382"
+					r="5"
+				/>
+				<motion.circle
+					custom={10}
+					variants={draw}
+					cx="127"
+					cy="80"
+					r="5"
+				/>
+				<motion.circle
+					custom={11}
+					variants={draw}
+					cx="370"
+					cy="105"
+					r="5"
+				/>
+				<motion.circle
+					custom={12}
+					variants={draw}
+					cx="578"
+					cy="42"
+					r="5"
+				/>
+				<motion.circle
+					custom={13}
+					variants={draw}
+					cx="237"
+					cy="261"
+					r="5"
+				/>
+				<motion.circle
+					custom={14}
+					variants={draw}
+					cx="390"
+					cy="382"
+					r="5"
+				/>
+			</motion.g>
 		</chakra.svg>
 	);
 }
@@ -163,6 +311,14 @@ function Illustration() {
 			p={0}
 			mr={{ base: "auto", md: 20 }}
 			mt={{ base: 5, md: 20 }}
+			as={motion.div}
+			initial={{
+				opacity: 0,
+			}}
+			animate={{
+				opacity: 1,
+			}}
+			transition="2s"
 		>
 			<Lottie
 				options={defaultOptions}
