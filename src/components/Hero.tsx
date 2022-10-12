@@ -125,7 +125,7 @@ function Background() {
 	const draw = {
 		hidden: { pathLength: 0, opacity: 0 },
 		visible: (i: number) => {
-			const delay = 1 + i * 0.3;
+			const delay = i * 1.5;
 			return {
 				pathLength: 1,
 				opacity: 1,
@@ -136,7 +136,7 @@ function Background() {
 						duration: 1.5,
 						bounce: 0,
 					},
-					opacity: { delay, duration: 0.01 },
+					opacity: { delay, duration: 1 },
 				},
 			};
 		},
@@ -157,14 +157,14 @@ function Background() {
 		>
 			<motion.rect
 				variants={draw}
-				custom={0}
+				custom={1}
 				fill="#FFFFFF"
 				width="800"
 				height="800"
 			/>
 			<motion.g
 				variants={draw}
-				custom={1}
+				custom={0}
 				fill="none"
 				stroke="#FFEE33"
 				strokeWidth="1"
@@ -197,98 +197,98 @@ function Background() {
 			</motion.g>
 			<motion.g variants={draw} fill="#000000">
 				<motion.circle
-					custom={1}
+					custom={0}
 					variants={draw}
 					cx="769"
 					cy="229"
 					r="5"
 				/>
 				<motion.circle
-					custom={2}
+					custom={0}
 					variants={draw}
 					cx="539"
 					cy="269"
 					r="5"
 				/>
 				<motion.circle
-					custom={3}
+					custom={0}
 					variants={draw}
 					cx="603"
 					cy="493"
 					r="5"
 				/>
 				<motion.circle
-					custom={4}
+					custom={0}
 					variants={draw}
 					cx="731"
 					cy="737"
 					r="5"
 				/>
 				<motion.circle
-					custom={5}
+					custom={0}
 					variants={draw}
 					cx="520"
 					cy="660"
 					r="5"
 				/>
 				<motion.circle
-					custom={6}
+					custom={0}
 					variants={draw}
 					cx="309"
 					cy="538"
 					r="5"
 				/>
 				<motion.circle
-					custom={7}
+					custom={0}
 					variants={draw}
 					cx="295"
 					cy="764"
 					r="5"
 				/>
 				<motion.circle
-					custom={8}
+					custom={0}
 					variants={draw}
 					cx="40"
 					cy="599"
 					r="5"
 				/>
 				<motion.circle
-					custom={9}
+					custom={0}
 					variants={draw}
 					cx="102"
 					cy="382"
 					r="5"
 				/>
 				<motion.circle
-					custom={10}
+					custom={0}
 					variants={draw}
 					cx="127"
 					cy="80"
 					r="5"
 				/>
 				<motion.circle
-					custom={11}
+					custom={0}
 					variants={draw}
 					cx="370"
 					cy="105"
 					r="5"
 				/>
 				<motion.circle
-					custom={12}
+					custom={0}
 					variants={draw}
 					cx="578"
 					cy="42"
 					r="5"
 				/>
 				<motion.circle
-					custom={13}
+					custom={0}
 					variants={draw}
 					cx="237"
 					cy="261"
 					r="5"
 				/>
 				<motion.circle
-					custom={14}
+					custom={0}
 					variants={draw}
 					cx="390"
 					cy="382"
@@ -318,7 +318,7 @@ function Illustration() {
 			animate={{
 				opacity: 1,
 			}}
-			transition="2s"
+			transition="1s"
 		>
 			<Lottie
 				options={defaultOptions}
