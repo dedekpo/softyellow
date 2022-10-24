@@ -14,7 +14,15 @@ export default function Contact() {
 	return (
 		<>
 			<Navbar />
-			<Center maxW="1280px" gap={50} h="90vh" mx="auto">
+			<Center
+				maxW={{ base: "90vw", md: "1280px" }}
+				gap={50}
+				h="90vh"
+				mx="auto"
+				mt={{ base: 20, md: "0" }}
+				mb={{ base: 40, md: "0" }}
+				flexDir={{ base: "column", md: "row" }}
+			>
 				<Img src="/programmers.jpg" w="800px" h="auto" />
 				<Flex flexDir="column" w="auto">
 					<Img src="logo.png" boxSize="100px" mx="auto" />
