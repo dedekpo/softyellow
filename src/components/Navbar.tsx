@@ -14,6 +14,7 @@ import {
 	useBreakpointValue,
 	useDisclosure,
 } from "@chakra-ui/react";
+import NextLink from "next/link";
 import { ChevronDownIcon, ChevronRightIcon } from "@chakra-ui/icons";
 
 import Image from "next/image";
@@ -33,6 +34,7 @@ export default function Navbar() {
 				align={"center"}
 				maxW="1460px"
 				mx="auto"
+				cursor="pointer"
 			>
 				{/* <Flex
 					flex={{ base: 1, md: "auto" }}
@@ -52,40 +54,42 @@ export default function Navbar() {
 						aria-label={"Toggle Navigation"}
 					/>
 				</Flex> */}
-				<Flex flex={{ base: 1 }} justify="start" align="center">
-					<Image
-						src="/logo.png"
-						alt="Soft Yellow"
-						width="30px"
-						height="30px"
-					/>
-					<Text
-						textAlign={useBreakpointValue({
-							base: "center",
-							md: "left",
-						})}
-						fontFamily={"heading"}
-						fontWeight="light"
-						color={useColorModeValue("gray.800", "white")}
-						ml={2}
-					>
-						Soft
-					</Text>
-					<Text
-						textAlign={useBreakpointValue({
-							base: "center",
-							md: "left",
-						})}
-						fontFamily={"heading"}
-						color={useColorModeValue("yellow.400", "white")}
-					>
-						Yellow
-					</Text>
+				<NextLink href="/">
+					<Flex flex={{ base: 1 }} justify="start" align="center">
+						<Image
+							src="/logo.png"
+							alt="Soft Yellow"
+							width="30px"
+							height="30px"
+						/>
+						<Text
+							textAlign={useBreakpointValue({
+								base: "center",
+								md: "left",
+							})}
+							fontFamily={"heading"}
+							fontWeight="light"
+							color={useColorModeValue("gray.800", "white")}
+							ml={2}
+						>
+							Soft
+						</Text>
+						<Text
+							textAlign={useBreakpointValue({
+								base: "center",
+								md: "left",
+							})}
+							fontFamily={"heading"}
+							color={useColorModeValue("yellow.400", "white")}
+						>
+							Yellow
+						</Text>
 
-					{/* <Flex display={{ base: "none", md: "flex" }} ml={10}>
+						{/* <Flex display={{ base: "none", md: "flex" }} ml={10}>
 						<DesktopNav />
 					</Flex> */}
-				</Flex>
+					</Flex>
+				</NextLink>
 
 				<Stack
 					flex={{ base: 1, md: 0 }}
@@ -95,8 +99,7 @@ export default function Navbar() {
 				>
 					<Button
 						as={Link}
-						href="https://api.whatsapp.com/send?phone=5531983399692&text=Ol%C3%A1!%20Gostaria%20de%20solicitar%20um%20or%C3%A7amento%20%3A)"
-						target="_blank"
+						href="/contato"
 						textDecoration="none"
 						display={{ base: "none", md: "inline-flex" }}
 						fontSize={"sm"}

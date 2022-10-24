@@ -67,8 +67,7 @@ export default function CallToAction() {
 					>
 						<Box display="inline-flex" rounded="md" shadow="md">
 							<Link
-								href="https://api.whatsapp.com/send?phone=5531983399692&text=Ol%C3%A1!%20Gostaria%20de%20solicitar%20um%20or%C3%A7amento%20%3A)"
-								target="_blank"
+								href="/contato"
 								w="full"
 								display="inline-flex"
 								alignItems="center"

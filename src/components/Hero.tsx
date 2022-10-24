@@ -95,8 +95,7 @@ export default function Hero() {
 					>
 						<Button
 							as={Link}
-							href="https://api.whatsapp.com/send?phone=5531983399692&text=Ol%C3%A1!%20Gostaria%20de%20solicitar%20um%20or%C3%A7amento%20%3A)"
-							target="_blank"
+							href="/contato"
 							bg={"yellow.400"}
 							color={"white"}
 							textDecoration="none"
